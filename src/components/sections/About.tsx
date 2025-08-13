@@ -5,7 +5,7 @@ const About = () => {
         <header className="mb-8">
           <h2 className="text-3xl font-semibold tracking-tight">About</h2>
           <p className="mt-2 text-muted-foreground max-w-prose">
-            I’m a front-end engineer focused on building fast, accessible, and beautifully crafted web apps. I love working with React, TypeScript, and modern tooling to deliver polished user experiences.
+            I’m a Virginia Tech student in Financial Technology & Big Data Analytics (Dean’s List) with experience spanning venture research, data analysis, and cybersecurity. I’ve shipped market research deliverables for VC, completed CodePath’s CYB101, and I’m currently building a verified trading record in a Python-based challenge. I like turning messy data into crisp decisions—securely.
           </p>
         </header>
         <div className="grid gap-6 md:grid-cols-3">

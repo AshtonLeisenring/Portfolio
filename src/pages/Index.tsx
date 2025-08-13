@@ -2,20 +2,27 @@ import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Education from "@/components/sections/Education";
+import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
-  const siteName = "Your Name — Portfolio";
-  const description = "Portfolio showcasing React, TypeScript, and design system work.";
+  const siteName = "Ashton Leisenring — Portfolio";
+  const description = "Financial Technology & Big Data Analytics student — cybersecurity and data-driven problem solver.";
   const canonical = "/";
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Your Name",
+    name: "Ashton Leisenring",
     url: typeof window !== "undefined" ? window.location.origin : "",
-    jobTitle: "Frontend Developer",
+    jobTitle: "Financial Technology & Big Data Analytics student",
+    sameAs: [
+      "https://www.linkedin.com/in/ashtonleisenring",
+      "https://github.com/AshtonLeisenring"
+    ],
   };
 
   return (
@@ -32,7 +39,10 @@ const Index = () => {
       <main>
         <Hero />
         <About />
+        <Education />
+        <Experience />
         <Projects />
+        <Skills />
         <Contact />
       </main>
       <Footer />

@@ -7,22 +7,46 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Interactive Dashboard",
+    title: "SSH Keys & Git Signing (CYB101)",
     description:
-      "A responsive analytics dashboard with real-time charts, filters, and accessible keyboard navigation.",
-    tags: ["React", "Recharts", "Tailwind"],
+      "Public/private keys for auth; OpenSSL file encryption/decryption; Git commit signing verification.",
+    tags: ["Linux", "SSH", "OpenSSL", "Git"],
+    link: "https://github.com/AshtonLeisenring/week2-ssh-keys",
   },
   {
-    title: "Design System Kit",
+    title: "Password Crack-a-thon",
     description:
-      "Reusable component library with tokens, variants, and documentation built on Radix and Tailwind.",
-    tags: ["shadcn", "Radix", "TypeScript"],
+      "Used John the Ripper with custom wordlists/rules/masks. Documented ethics + defense takeaways.",
+    tags: ["JtR", "Bash", "Regex"],
+    link: "https://github.com/AshtonLeisenring/week3-password-cracking",
   },
   {
-    title: "Marketing Site Revamp",
+    title: "Metasploitable vsftpd Backdoor",
     description:
-      "High-performance landing page with SEO, structured data, and a refined gradient aesthetic.",
-    tags: ["Vite", "SEO", "Accessibility"],
+      "Nmap recon → msfconsole exploit → shell access; wrote mitigations (patching, service hardening).",
+    tags: ["Nmap", "Metasploit"],
+    link: "https://github.com/AshtonLeisenring/week5-penetration-testing",
+  },
+  {
+    title: "DIY Malware (msfvenom)",
+    description:
+      "Generated harmless demo payloads, tried encoders, scanned with VirusTotal; emphasized safe lab only.",
+    tags: ["msfvenom", "Python", "VirusTotal"],
+    link: "https://github.com/AshtonLeisenring/week6-diy-malware",
+  },
+  {
+    title: "Threat Analysis with Shodan",
+    description:
+      "Pulled InternetDB JSON for 5 IPs, identified CVEs, validated via NVD, and prioritized risk.",
+    tags: ["curl/JQ", "Python", "NVD"],
+    link: "https://github.com/AshtonLeisenring/week8-threat-analysis",
+  },
+  {
+    title: "Python Trading Strategy — Limex Challenge",
+    description:
+      "SMA + RSI crossover with backtesting, fee modeling, risk management; outputs equity curves and performance stats.",
+    tags: ["Python", "pandas", "NumPy", "Matplotlib"],
+    link: "https://github.com/AshtonLeisenring/limex-trading-strategy",
   },
 ];
 
@@ -48,6 +72,11 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
+              {p.link && (
+                <a href={p.link} target="_blank" rel="noopener" className="mt-4 inline-flex text-sm text-primary hover:underline">
+                  View repository →
+                </a>
+              )}
             </article>
           ))}
         </div>
