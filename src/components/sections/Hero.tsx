@@ -15,7 +15,7 @@ const Hero = () => {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Button asChild variant="hero" size="lg">
-              <a href="https://drive.google.com/file/d/your-resume-id/view" target="_blank" rel="noopener" aria-label="Download resume">
+              <a href="https://drive.google.com/file/d/1QHvsfjZgxYxY0KPLduvATBLiJnWFnWih/view?usp=sharing" target="_blank" rel="noopener" aria-label="Download resume">
                 <Download className="mr-2" /> Download Resume
               </a>
             </Button>
