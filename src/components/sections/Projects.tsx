@@ -53,7 +53,7 @@ const Projects = () => {
                     {t}
                   </li>)}
               </ul>
-              {p.link}
+              
             </article>)}
         </div>
       </div>
