@@ -15,7 +15,7 @@ const About = () => {
           </article>
           <article className="rounded-xl border bg-card p-6 text-card-foreground shadow-sm transition-all hover:shadow-elegant">
             <h3 className="font-medium">Toolbox</h3>
-            <p className="mt-2 text-sm text-muted-foreground">Vite, React Query, Radix, Zod, React Hook Form</p>
+            <p className="mt-2 text-sm text-muted-foreground">Python, pandas, NumPy, Matplotlib, Git, GitHub, Bash, OpenSSL, Metasploit, Nmap, msfvenom, Shodan, Regex, Jupyter Notebook</p>
           </article>
           <article className="rounded-xl border bg-card p-6 text-card-foreground shadow-sm transition-all hover:shadow-elegant">
             <h3 className="font-medium">Focus</h3>
