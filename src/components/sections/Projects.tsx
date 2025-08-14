@@ -72,11 +72,6 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              {p.link && (
-                <a href={p.link} target="_blank" rel="noopener" className="mt-4 inline-flex text-sm text-primary hover:underline">
-                  View repository →
-                </a>
-              )}
             </article>
           ))}
         </div>
