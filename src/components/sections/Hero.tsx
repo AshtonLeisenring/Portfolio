@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
+  console.log("Hero component is rendering");
   return (
     <section id="home" className="relative overflow-hidden">
       <div className="container mx-auto grid gap-10 py-16 md:grid-cols-2 md:gap-8 md:py-24">
